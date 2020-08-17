@@ -1,15 +1,11 @@
 const Twit = require('twit')
 const notifier = require('node-notifier');
 const open = require('open');
-const franc = require('franc')
+const franc = require('franc');
+const keys = require('./keys.json');
 
-const apikey = 'xxx'
-const apiSecretKey = 'xxx'
-const accessToken = 'xxx'
-const accessTokenSecret = 'xxx'
 
-var T = new Twit();
-
+let T = new Twit(keys);
 
 (async () => {
 
