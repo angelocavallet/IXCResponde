@@ -8,12 +8,8 @@ const apiSecretKey = 'xxx'
 const accessToken = 'xxx'
 const accessTokenSecret = 'xxx'
 
-var T = new Twit({
-  consumer_key:         apikey,
-  consumer_secret:      apiSecretKey,
-  access_token:         accessToken,
-  access_token_secret:  accessTokenSecret,
-});
+var T = new Twit();
+
 
 (async () => {
 
